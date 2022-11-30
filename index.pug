@@ -23,7 +23,7 @@ html(lang="en")
                 .alert.alert-primary.min-width.mt-4
                     text Hint: Click on an item to edit.
             .container.py-1
-                input(type='radio', name='view_list', value='row' onchange='renderView()')#row 
+                input(type='radio', name='view_list', value='row' onchange='renderView()' checked)#row 
                 label(for='row') View it as rows
                 input(type='radio', name='view_list', value='column' onchange='renderView()')#column
                 label(for='column') View it as columns
