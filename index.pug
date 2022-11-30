@@ -18,6 +18,15 @@ html(lang="en")
                     placeholder='e.g JavaScript'
                     class='form-control'
                     )
-            .mx-auto.py-2
+                .alert.alert-primary.min-width.mt-4
+                    text Hint: Click on an item to edit.
+            .container.py-1
+                input(type='radio', name='view_list', value='row' onchange='renderView()')#row 
+                label(for='row') View it as rows
+                input(type='radio', name='view_list', value='column' onchange='renderView()')#column
+                label(for='column') View it as columns
+            
+            
+            .mx-auto.py-2.item-input
                 div(id='output' class='row')
     script(src='../js/toDo.js')

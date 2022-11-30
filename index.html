@@ -1,36 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
   <head>
     <title>Keyence Technical Test</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link href="../styles/style.css" rel="stylesheet"/>
   </head>
   <body class="bg-dark text-white">
     <div class="container py-3 px-4">
-      <div class="row text-center">
-        <img
-          class="img-fluid rounded mx-auto"
-          src="./img/js.png"
-          alt="JavaScript"
-          style="width: 35%"
-        />
+      <div class="row text-center"><img class="img-fluid rounded mx-auto" src="../img/js.png" alt="JavaScript" style="width : 35%"/>
         <p class="fs-1 fw-semibold">Programming Languages</p>
-        <input
-          class="form-control"
-          type="text"
-          id="input"
-          placeholder="e.g JavaScript"
-        />
+        <input class="form-control" type="text" id="input" placeholder="e.g JavaScript"/>
+        <div class="alert alert-primary min-width mt-4">
+          <text>Hint: Click on an item to edit.</text>
+        </div>
+      </div>
+      <div class="container py-1">
+        <input type="radio" name="view_list" value="row" onchange="renderView()" id="row"/>
+        <label for="row">View it as rows</label>
+        <input type="radio" name="view_list" value="column" onchange="renderView()" id="column"/>
+        <label for="column">View it as columns</label>
       </div>
       <div class="mx-auto py-2 item-input">
         <div class="row" id="output"></div>
       </div>
     </div>
   </body>
-  <script src="./js/toDo.js"></script>
+  <script src="../js/toDo.js"></script>
 </html>
