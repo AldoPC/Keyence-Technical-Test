@@ -11,3 +11,8 @@
     color: black;
 
 }
+
+.item-input{
+    display: flex;
+    justify-content: center;
+}
