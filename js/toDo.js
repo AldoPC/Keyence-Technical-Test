@@ -105,6 +105,12 @@ function renderView() {
   }
 }
 
+function limitLength(event, value) {
+  if (value != undefined && value.toString().length > 20) {
+    event.preventDefault();
+  }
+}
+
 function getKeyByValue(object, value) {
   return Object.keys(object).find((key) => object[key] === value);
 }
