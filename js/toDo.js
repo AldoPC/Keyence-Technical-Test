@@ -106,7 +106,7 @@ function renderView() {
 }
 
 function limitLength(event, value) {
-  if (value != undefined && value.toString().length > 20) {
+  if (value != undefined && value.toString().length > 19) {
     event.preventDefault();
   }
 }
